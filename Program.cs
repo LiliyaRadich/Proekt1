@@ -26,3 +26,21 @@ string[] NewMassCreate(string[] array, int a)
     } 
     return newmas; 
 } 
+void NewMasPrint(string[] array1, string[] array2) 
+{ 
+    Console.Write(" [ "); 
+    for (int i = 0; i < array1.Length; i++) 
+    { 
+        Console.Write($"<{array1[i]}> "); 
+    } 
+    Console.Write("] "); 
+    if (array2.Length == 0) 
+    { 
+        Console.Write("-> в массиве нет строк с длиной <= 3 символов"); 
+        return; 
+    } 
+    Console.Write("-> [ "); 
+    for (int i = 0; i < array2.Length; i++) 
+        Console.Write($"<{array2[i]}> "); 
+    Console.Write("]"); 
+}
